@@ -1,0 +1,30 @@
+[project]
+name = "healthbot-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Moni-5", email = "monishallam01@gmail.com" }
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "google-generativeai>=0.8.0",
+    "ipykernel>=6.29.0",
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-openai>=0.2.0",
+    "langgraph>=0.2.0",
+    "notebook>=7.0.0",
+    "openai>=1.40.0",
+    "python-dotenv>=1.0.0",
+    "tavily-python>=0.5.0",
+]
+
+[project.scripts]
+healthbot-ai = "healthbot_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
